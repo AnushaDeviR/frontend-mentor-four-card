@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      header, 
+      section{ 
+        font-family: "Nanum Myeongjo", serif; 
+        text-align: center;    
+        margin-left: auto;
+        margin-right: auto; 
+        color: rgb(66, 65, 65);
+
+        }
+
+        header{ 
+            width: 80%; 
+        }
+
+        #heading { 
+            font-size: 30px;
+            font-weight: lighter;
+        }
+
+        #sub-heading { 
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .container { 
+        display: flex;
+        column-gap: 40px;
+        width: 0 auto;
+        max-width: 1300px;
+        overflow: auto;
+        height: 0 auto;
+        justify-content: center;
+        }
+
+        .flex-one, 
+        .flex-three {
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .flex-two {
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        row-gap: 20px;
+      }
+        .card {
+        position: relative;
+        max-width: 350px;
+        height: 210px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #turquoise {
+        border-top: 7px;
+        border-style: solid;
+        border-color: turquoise white white white;
+      }
+
+      #red {
+        border-top: 7px;
+        border-style: solid;
+        border-color: red white white white;
+      }
+
+
+      #yellow {
+        border-top: 7px;
+        border-style: solid;
+        border-color: yellow white white white;
+      }
+
+      #blue {
+        border-top: 7px;
+        border-style: solid;
+        border-color: skyblue white white white;
+      }
+
+      .text {
+        text-align: left;
+      }
+
+
+      #supervisor-icon {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        right: 40px;
+        top: 150px;
+      }
+
+      #team-icon {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        right: 40px;
+        top: 150px;
+      }
+
+      #karma-icon {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        right: 40px;
+        top: 150px;
+      }
+
+      #calculator-icon {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        right: 40px;
+        top: 150px;
+      }
+
+@media(max-width: 768px){ 
+  .container { 
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 0 auto;
+        height: 0 auto;
+        justify-content: center;
+}
+.card {
+        position: relative;
+        max-width: 350px;
+        height: 0 auto;
+        margin:auto;
+        padding: 20px;
+        margin: 10px;
+
+      }
+}
+/*mobile*/ 
+
+@media(max-width: 500px){ 
+
+  .container { 
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 0 auto;
+        height: 0 auto;
+        justify-content: center;
+  }
+  .card {
+        position: relative;
+        max-width: 450px;
+        height: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        margin: 10px;
+
+      }
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="heading">Reliable, efficient delivery</h1>
+      <h1 id="sub-heading">Powered by Technology</h1>
+      <p>
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </header>
+    <br />
+    <br />
+    <section class="container">
+        
+    
+      <div class="flex-one">
+        <!--Supervisor-->
+        <div class="card" id="turquoise">
+          <div class="text">
+            <h2>Supervisor</h2>
+            <p>Monitors activity to identify project roadblocks</p>
+          </div>
+
+          <img src="./images/icon-supervisor.svg" alt="" id="supervisor-icon" />
+        </div>
+      </div>
+
+      <div class="flex-two">
+        <!--Team Builder-->
+        <div class="card" id="red">
+          <div class="text">
+            <h2>Team Builder</h2>
+            <p>
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+          </div>
+
+          <img src="./images/icon-team-builder.svg" alt="" id="team-icon" />
+        </div>
+
+        <!--Karma-->
+        <div class="card" id="yellow">
+          <div class="text">
+            <h2>Karma</h2>
+            <p>Regularly evaluates our talent to ensure quality</p>
+          </div>
+          <img src="./images/icon-karma.svg" alt="" id="karma-icon" />
+        </div>
+      </div>
+
+      <div class="flex-three">
+        <!--Calculator-->
+        <div class="card" id="blue">
+          <div class="text">
+            <h2>Calculator</h2>
+            <p>
+              Uses data from past projects to provide better delivery estimates
+            </p>
+          </div>
+
+          <img src="./images/icon-calculator.svg" alt="" id="calculator-icon" />
+        </div>
+      </div>
+
+        </section>
+
+    <br />
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Anushadevi Rajkumar</a>.
+      </p>
+    </footer>
+  </body>
+</html>
